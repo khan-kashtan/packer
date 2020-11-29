@@ -21,7 +21,14 @@
             "type": "shell",
             "script": "scripts/install_mongod.sh",
             "execute_command": "sudo {{.Path}}"
+        },
+        {
+            "type": "shell",
+            "inline": [
+                "cd ~/ && git clone -b monolith https://github.com/express42/reddit.git",
+                "cd reddit && bundle install",
+                "puma -d"
+            ]
         }
     ]
 }
-

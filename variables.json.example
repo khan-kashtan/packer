@@ -1,0 +1,9 @@
+{
+    "COMMENT" : "Set actual prohect_id and username",
+    "def_project_id": "project_id",
+    "username": "username",
+
+    "def_source_image_family": "ubuntu-1604-lts",
+    "def_machine_type": "f1-micro",
+    "zone": "europe-west1-b"
+}
